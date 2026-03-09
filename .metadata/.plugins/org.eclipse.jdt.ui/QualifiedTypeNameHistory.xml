@@ -38,7 +38,6 @@
     <fullyQualifiedTypeName name="Collection.QueueDemo.queue"/>
     <fullyQualifiedTypeName name="java.lang.InternalError"/>
     <fullyQualifiedTypeName name="java.util.Stack"/>
-    <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.sql.SQLClientInfoException"/>
     <fullyQualifiedTypeName name="java.sql.SQLException"/>
@@ -48,4 +47,7 @@
     <fullyQualifiedTypeName name="StringEasy.StringIntegeratoi"/>
     <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
     <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="com.sun.tools.javac.Main"/>
+    <fullyQualifiedTypeName name="ArrayEasy.rotate"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
 </qualifiedTypeNameHistroy>
