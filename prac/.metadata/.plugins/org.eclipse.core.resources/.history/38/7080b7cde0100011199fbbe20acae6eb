@@ -1,0 +1,16 @@
+package prac;
+
+public class gcd {
+public static void main(String[] args) {
+	
+int a =3,b=10;
+int r =1;
+while(r!=0) {
+	r=b%a;
+	b=a;
+	a=r;
+}
+
+System.out.println(a);
+}
+}

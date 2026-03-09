@@ -1,0 +1,29 @@
+package StringEasy;
+
+import java.util.HashMap;
+
+public class FirstUniqueCharacterinaStringHASMAP {
+
+	public int firstUniqChar(String s) {
+HashMap<Character, Integer> h = new HashMap<>();
+
+for(int c : s.toCharArray()) {
+h.put(c, h.getOrDefault(h,0)+1);
+}
+
+for(int i =0;i<s.length();i++) {
+	if(h.get(s.charAt(i)) == 1) {
+		return i;
+	}
+}
+return -1;
+    }
+    
+    public static void main(String[] args) {
+		String s = "slaal";
+		
+		FirstUniqueCharacterinaString f = new FirstUniqueCharacterinaString();
+		
+		System.out.println(f.firstUniqChar(s));
+	}
+}

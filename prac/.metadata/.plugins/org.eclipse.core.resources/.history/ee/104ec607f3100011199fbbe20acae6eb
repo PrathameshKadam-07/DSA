@@ -1,0 +1,21 @@
+package prac;
+
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
+import java.util.TreeSet;
+
+public class tryy {
+public static void main(String[] args) {
+	Character[] c = {'p','s','s','a','c'};
+	Integer[] i = {5,2,4,3,1,2,1,21,21,82,112,6,2,4,3};
+	
+	HashSet<Integer> h = new HashSet<Integer>(Arrays.asList(i));
+	Set<Character> t = new TreeSet<Character>(Arrays.asList(c));
+	for(Character c1 : t) {
+		System.out.print(c1);
+	}
+	System.out.println(h);
+	System.out.println(t);
+}
+}

@@ -1,0 +1,35 @@
+package StringEasy;
+
+public class ImplementstrStr {
+    public int strStr(String haystack, String needle) {
+        for(int i =0;i<haystack.length();i++) {
+        	
+        	if(haystack.charAt(i) == needle.charAt(i)) {
+        		int first = i;
+        		int last = 0;
+        		for(int j =1;j<needle.length();j++) {
+        			if(needle.charAt(j) == haystack.charAt(j)) {
+        				last = j;
+        				continue;
+        			}
+        			if(last == needle.length()) {
+        				return first;
+        			}
+        			else {
+        				break;
+        			}
+
+
+        		}
+        	}
+        }
+    }
+    
+    public static void main(String[] args) {
+		String haystack = "leetcode";
+		String needle = "leet";
+		ImplementstrStr is = new ImplementstrStr();
+		
+		System.out.println(is.strStr(haystack, needle));
+	}
+}

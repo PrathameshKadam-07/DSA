@@ -1,0 +1,132 @@
+package Collection;
+
+import java.util.Stack;
+
+public class StackDemo {
+public static void main(String[] args) {
+//	Stack<Integer> st = new Stack<>();
+//	st.push(1);
+//	st.push(2);
+//	st.push(3);
+//	st.push(4);
+//	
+////	int element = st.pop();
+////	System.out.println(element);
+////	System.out.println(st);
+////	System.out.println(st.peek());
+////	System.out.println(st.isEmpty());
+//	int s = st.search(4);
+//	System.out.println(s);
+	
+//	Reverse the string
+//	Stack<Character> st = new Stack<>();
+//	String s = "abcd";
+//
+//	for (char c : s.toCharArray()) 
+//	{
+//		st.push(c);
+//	}
+//
+//	while (!st.isEmpty()) 
+//	{
+//	    System.out.print(st.pop());
+//	}
+
+	
+//	Paraanthesis
+//	String s = "{[()]}";
+//	char[] ch = s.toCharArray();
+//	int high = ch.length-1;
+//	int c = 0;
+//for(int i = 0;i<ch.length/2;i++) {
+//	if(ch[i] == '{' && ch [high] == '}' || ch[i] == '(' && ch [high] == ')' || ch[i] == '[' && ch [high] == ']') {
+//		high--;
+//		continue;
+//		
+//	}
+//	else {
+//		c++;
+//		break;
+//	}
+//}
+//if(c!=0) {
+//	System.out.println("INVALID INPUT");
+//}
+//else {
+//	System.out.println("Valid Input");
+//}
+	
+//	with Stack parenthesis
+	
+//	String s = "{[()]}";
+//	int cnt =0;
+//	Stack<Character> st = new Stack<Character>();
+//	for(char c : s.toCharArray()) {
+//		if(c == '{' || c == '[' || c =='(') {
+//			st.push(c);
+//		}
+//		else{
+//			if(c=='}' && st.pop()=='{' || c==']' && st.pop()=='[' || c==')' && st.pop()=='(') {
+//				continue;
+//			}else {
+//				cnt++;
+//			}
+//			}
+//	}
+//	if(cnt != 0) {
+//		System.out.println("Invalid Input");
+//	}
+//	else {
+//		System.out.println("Valid Input");
+//	}
+	
+//	SAME ELEMT REMOVE CONSECUTIVE
+//	Stack<Character> st = new Stack<>();
+//	String s = "abbaca";
+//
+//	for (char c : s.toCharArray()) {
+//	    if (!st.isEmpty() && st.peek() == c) {
+//	        st.pop();
+//	    } else {
+//	        st.push(c);
+//	    }
+//	}
+//	StringBuilder sb = new StringBuilder();
+//	for (char c : st) sb.append(c);
+//
+//	System.out.println(sb.toString());
+
+	
+//	POST EXPRESSIOn
+	
+//String s = "231*+9-";
+//Stack<Integer> st = new Stack<Integer>();
+//
+//for(char c : s.toCharArray()) {
+//	int n = Character.getNumericValue(c);
+//	if(n >=0 && n <=9)
+//	{
+//		st.push(n);
+//	}
+//	else {
+//		int a = st.pop();
+//		int b = st.pop();
+//		if(c == '+') {
+//			st.push(b+a);
+//		}
+//		else if(c =='-')
+//		{
+//			st.push(b-a);
+//		}
+//		else if(c == '*')
+//		{
+//			st.push(b*a);
+//		}
+//	}
+//}
+//System.out.println(st.peek());
+int c = 2;
+char a = (char)(16-'0');
+System.out.println(a);
+}
+}

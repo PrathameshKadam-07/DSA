@@ -1,0 +1,23 @@
+package Random;
+
+import java.util.Arrays;
+
+public class anagram2 {
+public static void main(String[] args) {
+	String s = "abc";
+	String s1 = "cba";
+	
+	char[] s2 = s.toCharArray();
+	char[] s3 = s1.toCharArray();
+	
+	Arrays.sort(s2);
+	Arrays.sort(s3);
+	
+	if(Arrays.equals(s2, s3)) {
+		System.out.println("They are anagram");
+	}
+	else {
+		System.out.println("Not an anagram");
+	}
+}
+}

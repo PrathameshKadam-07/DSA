@@ -1,0 +1,10 @@
+package Random;
+
+public class test {
+public static void main(String[] args) {
+	
+	char c = 's';
+	int g = c+32;
+	System.out.println(g);
+}
+}

@@ -1,0 +1,10 @@
+package prac;
+
+public class stringbuilder {
+public static void main(String[] args) {
+	String s = "pra";
+	
+	StringBuilder sb = new StringBuilder(s);
+		System.out.println(sb);
+}
+}

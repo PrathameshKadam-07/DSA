@@ -1,0 +1,14 @@
+package prac;
+
+import java.util.Arrays;
+import java.util.HashSet;
+
+public class tryy {
+public static void main(String[] args) {
+	Character[] c = {'s','s','a','c'};
+	Integer[] i = {5,2,4,3,1,6,2,4,3};
+	
+	HashSet<Character> h = new HashSet<Character>(Arrays.asList(c));
+	System.out.println(h);
+}
+}

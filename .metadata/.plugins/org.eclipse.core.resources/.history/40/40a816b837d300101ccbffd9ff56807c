@@ -1,0 +1,19 @@
+package prac;
+
+import java.util.Arrays;
+import java.util.HashMap;
+
+public class practice {
+	public static void main(String[] args) {
+String a = "JAMES";
+		int n = 5,sum = 0,id = 1;
+		char[] s = a.toCharArray();
+		for(int i = 0;i<n;i++) {
+			if(id%2!=0 || s[i]%2!=0) {
+				sum = sum + ((int)s[i]*id);
+			}
+			id++;
+		}
+		System.out.println(sum);
+	}
+	}

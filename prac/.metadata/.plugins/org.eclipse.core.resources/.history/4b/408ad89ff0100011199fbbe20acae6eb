@@ -1,0 +1,22 @@
+package prac;
+
+public class stringbuilder {
+public static void main(String[] args) {
+	String s = "pprpp";
+	
+	StringBuilder sb = new StringBuilder(sb);
+//	for(int i =s.length()-1;i>=0;i--) {
+//		sb.append(s.charAt(i));
+//	}
+//	
+//	if(sb.toString().equals(s)) {
+//		System.out.println("yes palindrone");
+//	}
+//	else {
+//		System.out.println("not an palandrone");
+//	}
+	
+	sb.delete(0, 1);
+	System.out.println(sb);
+}
+}

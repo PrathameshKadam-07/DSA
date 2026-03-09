@@ -1,0 +1,26 @@
+package Random;
+
+public class anagram {
+	public static void main(String[] args) {
+		
+String s = "abs";
+String s1 = "sba";
+
+String s2 = s.toLowerCase();
+String s3 = s.toLowerCase();
+char[] st = new char[26];
+
+for(int i = 0;i<s.length();i++) {
+	
+	st[s2.charAt(i) - 'a']++;
+	st[s3.charAt(i) - 'a']--;
+}
+int cnt=0;
+for(int n : st) {
+	if(n!=0) {
+		System.out.println("no it is not anagram");
+		cnt++;
+		break;
+	}
+}
+	}}

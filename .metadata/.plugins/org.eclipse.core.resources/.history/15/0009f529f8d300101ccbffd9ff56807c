@@ -1,0 +1,42 @@
+package prac;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.Scanner;
+
+public class practice {
+	public static void main(String[] args) {
+ Scanner sc = new Scanner(System.in);
+ System.out.println("Enter String 1: ");
+ String a = sc.nextLine();
+ System.out.println("Enter String 2: ");
+ String b = sc.nextLine();
+ 
+ StringBuilder sb1 = new StringBuilder(a);
+ StringBuilder sb = new StringBuilder(b);
+ int co = 0;
+if(a.length() == b.length()) {
+	for(int i =0;i<sb1.length();i++) {
+		for(int j =0;j<sb.length();j++) {
+			if(sb1.charAt(i) == sb.charAt(j)) {
+				co++;
+				sb.deleteCharAt(j);
+			}
+		}
+	}
+	
+	if(co == sb1.length()) {
+		System.out.println("Yes they are ANAGRAMs");
+	}
+	else {
+		System.out.println("Not an anagrams");
+	}
+}
+else {
+	System.out.println("They are not Anagrams");
+}
+	}
+	}

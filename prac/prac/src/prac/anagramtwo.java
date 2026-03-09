@@ -1,0 +1,59 @@
+package prac;
+
+//import java.util.Arrays;
+
+public class anagramtwo {
+
+	public static void main(String[] args) {
+	String s1 ="abc";
+	String s2 = "cba";
+	
+//	char[] c1 = s1.toCharArray();
+//	char[] c2 = s2.toCharArray();
+//	
+//	Arrays.sort(c1);
+//	Arrays.sort(c2);
+//	
+//	if(Arrays.equals(c1, c2)) {
+//		System.out.println("yes anagram");
+//	}
+//	else {
+//		System.out.println("not anagram");
+//	}
+//	}
+
+	char[] c1 = s1.toCharArray();
+	char[] c2 = s2.toCharArray();
+	
+	for(int i = 0;i<s1.length();i++) {
+		for(int j = 0;j<s1.length()-1;j++) {
+			if(c1[j]>c1[j+1]) {
+				char temp = c1[j];
+				c1[j] = c1[j+1];
+				c1[j+1] = temp;
+			}
+		}
+	}
+	for(int i = 0;i<s1.length();i++) {
+		for(int j = 0;j<s1.length()-1;j++) {
+			if(c2[j]>c2[j+1]) {
+				char temp = c2[j];
+				c2[j] = c2[j+1];
+				c2[j+1] = temp;
+			}
+		}
+	}
+	
+	int c =0;
+	for(int i=0;i<s1.length();i++) {
+		if(c1[i]!=c2[i]) {
+			System.out.println("not an anagram");
+			c++;
+			break;
+		}
+	}
+	if(c==0) {
+		System.out.println("yes anagram");
+	}
+	}
+}

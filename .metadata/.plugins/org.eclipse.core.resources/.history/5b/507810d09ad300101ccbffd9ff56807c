@@ -1,0 +1,18 @@
+package prac;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.LinkedList;
+
+public class practice {
+	public static void main(String[] args) {
+LinkedList<String> l = new LinkedList<String>(Arrays.asList("Apple","CAR","doll"));
+LinkedList<Integer> l1 = new LinkedList<>(Arrays.asList(1,5,45,80,50));
+	l.removeFirst();
+	l.removeLast();
+	l1.removeIf(x -> x % 2 == 0);
+	System.out.println(l1);
+	}
+	}

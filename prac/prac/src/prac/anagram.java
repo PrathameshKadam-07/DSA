@@ -1,0 +1,24 @@
+package prac;
+
+public class anagram {
+
+	public static void main(String[] args) {
+String s ="sTrinG";
+//char[] c =s.toCharArray();
+//for(int i =0;i<s.length();i++) {
+//	if(Character.isLowerCase(s.charAt(i))){
+//		c[i] = Character.toUpperCase(s.charAt(i));
+//	}
+//	else {
+//		c[i] = Character.toLowerCase(s.charAt(i));
+//	}
+//}
+//System.out.println(c);
+
+char[] c = new char[s.length()];
+
+
+
+	}
+
+}

@@ -1,0 +1,23 @@
+package prac;
+
+import java.util.HashMap;
+
+public class counthashmap {
+public static void main(String[] args) {
+
+
+	String s = "adabadbjsjk";
+	char[] c = s.toCharArray();
+	HashMap<Character,Integer> hm = new HashMap<Character, Integer>();
+	
+for(char ch :c) {
+	if(hm.containsKey(ch)) {
+		hm.put(ch, hm.get(ch)+1);
+	}
+	else {
+		hm.put(ch, 1);
+	}
+}
+
+System.out.println(hm);
+}}
