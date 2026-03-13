@@ -1,0 +1,34 @@
+package ArrayEasy;
+import java.util.*;
+
+public class PlusOne {
+	  public int[] plusOne(int[] digits) {
+	        int num = 0;
+	         for(int i = 0;i<digits.length;i++){
+	            num = num *10 + digits[i];
+	        }
+	        num++;
+	        int len = 0; 
+	        while(num >= 0){
+	            num=num/10;
+	            len++;
+	        }
+	        
+	        int[] ar = new int[len];
+	        while(num>=0){
+	            int rem = num %10;
+	          ar[len] = rem;
+	          len--;
+	        }
+	        
+	        return ar;
+	    }
+	
+public static void main(String[] args) {
+	ArrayList<Integer> list = new ArrayList<Integer>();
+	list.add(1);
+	list.add(2);
+	System.out.println(list);
+	
+}
+}
