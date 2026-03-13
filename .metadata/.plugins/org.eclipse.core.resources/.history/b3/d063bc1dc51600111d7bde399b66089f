@@ -1,9 +1,0 @@
-package pacti;
-
-public class string2 {
-
-	char c = 'f';
-	
-	char lower = (char)(c + 32);
-	
-}
