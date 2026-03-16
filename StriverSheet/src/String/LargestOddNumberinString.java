@@ -1,30 +1,19 @@
 package String;
 
 public class LargestOddNumberinString {
-	 public String largestOddNumber(String num) {
-	    	int n = 0;
-	    	int ans = 0;
-	    	StringBuilder sb = new StringBuilder();
-	        for(int i = 0;i<num.length();i++) {
-	        	n = (n*10)+ (num.charAt(i) - '0');
+	public String largestOddNumber(String num) {
+	    StringBuilder sb = new StringBuilder();
+	    for(int i = num.length()-1;i>=0;i--){
+	        if((num.charAt(i)-'0') % 2 != 0 ){
+	            for(int j = 0;j<=i;j++){
+	                sb.append(num.charAt(j));
+	            }
+	            return sb.toString();
 	        }
-	        
-	        while(n>0) {
-	        	if(n%2!=0) {
-	        		ans = n;
-	        		break;
-	        	}
-	        	else {
-	        		n=n/10;
-	        	}
-	        }
-	        if(ans == 0){
-	            return "";
-	        }
-	     
-	        String s = ans+"";
-	        return s;
 	    }
+
+	    return "";
+	}
 	
 	public static void main(String[] args) {
 	
