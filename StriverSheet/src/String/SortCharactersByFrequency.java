@@ -9,7 +9,7 @@ public class SortCharactersByFrequency {
     public String frequencySort(String s) {
      
     	HashMap<Character, Integer> hm = new HashMap<>();
-    	
+    
     	for(char c: s.toCharArray()) {
     		if(hm.containsKey(c)) {
     			hm.put(c, hm.get(c)+1);
@@ -32,15 +32,17 @@ public class SortCharactersByFrequency {
     			}
     		}
     	}
-    	StringBuilder sb = new StringBuilder();
-    	for(Map.Entry<Character,Integer> entry: list) {
-    		char c = entry.getKey();
-    		int val = entry.getValue();
-    		
-    		for(int i = 0;i<el.getValue())
-    	}
+      StringBuilder result = new StringBuilder();
+        for (Map.Entry<Character, Integer> entry : list) {
+            char ch = entry.getKey();
+            int freq = entry.getValue();
+
+            for (int i = 0; i < freq; i++) {
+                result.append(ch);
+            }
+        }
     	
-    return list.toString();
+    return result.toString();
     }
     
     public static void main(String[] args) {
