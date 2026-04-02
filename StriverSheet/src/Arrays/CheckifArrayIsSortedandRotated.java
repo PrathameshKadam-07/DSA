@@ -23,7 +23,6 @@ public class CheckifArrayIsSortedandRotated {
 				return true;
 			}
 		}
-
 		return false;
 	}
 
