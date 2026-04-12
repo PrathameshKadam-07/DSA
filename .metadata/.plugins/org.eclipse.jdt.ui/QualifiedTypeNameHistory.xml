@@ -14,7 +14,6 @@
     <fullyQualifiedTypeName name="java.sql.DatabaseMetaData"/>
     <fullyQualifiedTypeName name="java.sql.Date"/>
     <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
-    <fullyQualifiedTypeName name="java.awt.List"/>
     <fullyQualifiedTypeName name="java.lang.InheritableThreadLocal"/>
     <fullyQualifiedTypeName name="String.Inheritance28"/>
     <fullyQualifiedTypeName name="java.lang.classfile.CodeBuilder.CatchBuilder"/>
@@ -40,7 +39,6 @@
     <fullyQualifiedTypeName name="StringEasy.StringIntegeratoi"/>
     <fullyQualifiedTypeName name="com.sun.tools.javac.Main"/>
     <fullyQualifiedTypeName name="ArrayEasy.rotate"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="ArrayEasy.TwoSum"/>
     <fullyQualifiedTypeName name="java.sql.Array"/>
     <fullyQualifiedTypeName name="java.util.HashSet"/>
@@ -56,5 +54,8 @@
     <fullyQualifiedTypeName name="java.util.Map"/>
     <fullyQualifiedTypeName name="java.util.HashMap"/>
     <fullyQualifiedTypeName name="Arrays.MaximumSubarray"/>
+    <fullyQualifiedTypeName name="Arrays.NextPermutation"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.awt.List"/>
 </qualifiedTypeNameHistroy>
